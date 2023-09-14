@@ -54,6 +54,7 @@ class _HomeViewState extends State<HomeView> {
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
       ),
+      body: _widgetOptions.elementAt(_selectedIndex),
     );
   }
 }

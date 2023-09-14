@@ -96,12 +96,14 @@ class _LoginViewState extends State<LoginView> {
                       },
                       child: const Text('Login')),
                   TextButton(
-                      onPressed: () {
-                        Map<String, dynamic> formData = {};
-                        formData['username'] = usernameController.text;
-                        formData['password'] = passwordController.text;
-                      },
-                      child: const Text('Belum punya akun?')),
+                    onPressed: () {
+                      Map<String, dynamic> formData = {};
+                      formData['username'] = usernameController.text;
+                      formData['password'] = passwordController.text;
+                      pushRegister(context);
+                    },
+                    child: const Text('Belum punya akun?'),
+                  ),
                 ],
               ),
             ],
